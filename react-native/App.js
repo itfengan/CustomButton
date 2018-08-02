@@ -43,13 +43,13 @@ export default class App extends Component<Props> {
                               // paddingRight={30}
                               // paddingTop={15}
                               // paddingBottom={15}
-                              width={300}
-                              height={300}
+                              width={250}
+                              height={70}
                               backgroundColor={'#FF0099'}//背景色
                               pressBackgroundColor={'#FF9999'}//按下背景色
                               textColor={'#330099'}//文字色
                               pressTextColor={'#00a056'}//按下文字色
-                              // text={'点击我，快乐你'}
+                              text={'CommonButton'}
                               onPressFunc={this._onPress}
                               onLongPressFunc={this._onLongPress}
                               ref={

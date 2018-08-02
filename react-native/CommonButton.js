@@ -10,13 +10,13 @@ import PropTypes from 'prop-types';
 
 
 // default props
-const backgroundColor='#000000';
-const pressBackgroundColor=backgroundColor;
-const textColor='#FFFFFF';
-const pressTextColor=textColor;
+const backgroundColor = '#000000';
+const pressBackgroundColor = backgroundColor;
+const textColor = '#FFFFFF';
+const pressTextColor = textColor;
 
 export default class CommonButton extends Component {
-    
+
     // 构造
     constructor(props) {
         super(props);
@@ -43,7 +43,7 @@ export default class CommonButton extends Component {
         textColor: textColor,
         //按下文字色
         pressTextColor: pressTextColor,
-        //文字颜色
+        //文字大小
         fontSize: 17,
         //圆角
         radius: 0,
@@ -59,16 +59,16 @@ export default class CommonButton extends Component {
         //text
         text: '没有设定',
         width: undefined,
-        height:undefined
+        height: undefined
     }
 
-    setDisabled(isDisabled){
+    setDisabled(isDisabled) {
         this.setState({
             disabled: true,
         })
     }
 
-    setButtonText(newText){
+    setButtonText(newText) {
         this.setState({
             text: newText,
         })
@@ -91,16 +91,16 @@ export default class CommonButton extends Component {
             <View>
                 <TouchableHighlight
                     style={{
-                        width:this.props.width,
-                        height:this.props.height,
-                        justifyContent:'center',
-                        alignItems:'center',
+                        width: this.props.width,
+                        height: this.props.height,
+                        justifyContent: 'center',
+                        alignItems: 'center',
                         backgroundColor: this.props.backgroundColor,
                         paddingLeft: this.props.paddingLeft,
                         paddingRight: this.props.paddingRight,
                         paddingTop: this.props.paddingTop,
                         paddingBottom: this.props.paddingBottom,
-                        borderRadius:8,
+                        borderRadius: 8,
                     }}
                     activeOpacity={1}
                     // 底层的颜色被隐藏的时候调用。
